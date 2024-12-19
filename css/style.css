@@ -1607,10 +1607,6 @@ a:focus {
     }
 }
 
-
-  
-  
-  
   /* 전체 모달 스타일 */
   .modal {
     display: none;
@@ -1633,6 +1629,7 @@ a:focus {
     border-radius: 2px; /* 둥근 모서리 */
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19); /* 그림자 효과 */
    
+   height: 80%;
     max-width: 1000px; /* 최대 너비 설정 */
 
     /* 중앙 배치를 위한 스타일 */
@@ -1642,7 +1639,6 @@ a:focus {
     transform: translate(-50%, -50%);
 
   }
-
 
 
   /* 닫기 버튼 스타일 */
