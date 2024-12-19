@@ -1653,7 +1653,7 @@ a:focus {
             box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19); /* 그림자 효과 */
            
             max-width: 1000px; /* 최대 너비 설정 */
-            max-height: 500px;
+            max-height: 300px;
             /* 중앙 배치를 위한 스타일 */
             position: absolute;
             top: 53.6%;
