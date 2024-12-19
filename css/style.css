@@ -168,6 +168,19 @@ a:focus {
     border-radius: 0;
     background: #f8f9fa;
 }
+.navbar-toggler {
+    padding: 2px 6px;
+    font-size: 10px; /* 버튼 텍스트 크기 */
+    line-height: 3; /* 텍스트의 높이 조정 */
+    border-radius: 3px; /* 버튼의 둥근 모서리 */
+}
+
+.navbar-toggler-icon {
+    width: 16px; /* 아이콘의 가로 크기 */
+    height: 16px; /* 아이콘의 세로 크기 */
+}
+
+
 
 @media (min-width: 992px) {
     .navbar {
@@ -1627,7 +1640,6 @@ a:focus {
     top: 53.6%;
     left: 50%;
     transform: translate(-50%, -50%);
-max-width: 1000px;
 
   }
 
