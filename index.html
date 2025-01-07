@@ -1,419 +1,726 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Suyeon Shin</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
-       
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
 
-        <!-- Favicon -->
-        <link href="img/fabicon.png" rel="icon">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suyeon Shin</title>
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">Suyeon Shin</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body>
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#education" class="nav-item nav-link">Education</a>
-                        <a href="#experience" class="nav-item nav-link">Experience</a>
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                        
-                    </div>
-                </div>
-            </div>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Om Kharche" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Suyeon Shin">Suyeon Shin</h1>
+          <div class="titles">
+            <p class="title">
+              aim to create humane technology
+            </p>
+          </div>
         </div>
-        <!-- Nav Bar End -->
+        
 
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-        <!-- Hero Start -->
-        <div class="hero" id="home">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="hero-content">
-                            <div class="hero-text">
-                                <h1>I aim to create</h1>
-                                <h1>humane technology !</h1>
-                                <h2></h2>
-                                <div class="typed-text">HCI, UI/UX, emotion, mental health</div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 d-none d-md-block">
-                        <div class="hero-image">
-                        <!--- <img src="img/hero.png" alt="Hero Image"> -->
-                        </div>
-                    </div>
-                </div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
-        </div>
-        <!-- Hero End -->
 
-       
-        <!-- About Start -->
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-            <div class="container">
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:dearsunshine@dgist.ac.kr" class="contact-link">dearsunshine@dgist.ac.kr</a>
+            </div>
+
+          </li>
+
+          
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Gyeonggi-do, Korea</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        
+
     
-                        <div class="about-content">
-                            <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                                <p>About Me</p>
-                            </header>
-                            <div class="about-text">
-                                <p>
-                                    I'm studying Computer Engineering at Daegu Gyeongbuk Institute of Science and Technology (DGIST).
 
-                                    I'm interested in HCI, especially UI/UX, psychology, and mental health. I want to enhance people's experiences and the emotional state they feel within those experiences.
-                                </p>
-                                <p style="margin-bottom: 50px;"></p>
-                                <div style="text-align: center;">
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          
+          <p>
+            I'm studying Computer Engineering at Daegu Gyeongbuk Institute of Science and Technology (DGIST). I'm interested in HCI, especially UI/UX, psychology, and mental health. I want to enhance people's experiences 
+            and the emotional state they feel within those experiences. 
+          </p>
+          <p>
+            <a href="https://drive.google.com/file/d/165OYbpBLs7TinUFqLHsgiCOIkNhbY2GO/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="color:#ffffff; display: inline;">Here</a>
+            <a style="color: #D6D6D6; display: inline;">is my Curriculum Vitae.</a>
+          </p>
+          
+        </section>
+        
+
+
+      
+
+
+      
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+ 
+       
+
+        </section>
+
+      </article>
+<!--
+      <div style="text-align: center;">
                                
-                                <a href="mailto:dearsunshine@dgist.ac.kr" style="display: inline-block; padding: 10px 20px; background-color: #b8eafe; color: white; text-decoration: none; border-radius: 5px;">📧</a>
-                                <a href="https://drive.google.com/file/d/165OYbpBLs7TinUFqLHsgiCOIkNhbY2GO/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 10px 20px; background-color: #b8eafe; color: white; text-decoration: none; border-radius: 5px;">
-                                    Curriculum Vitae
-                                </a>
-                                
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-          <!-- Edu Start -->
-          <div class="education" id="education">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>Eduation</p>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2022.02-</div>
-                            
-                            <h2><a href="https://www.dgist.ac.kr/eng/index.do" target="_blank" rel="noopener noreferrer">   Daegu Gyeongbuk Institute of Science and Technology (DGIST)</a>
-                             </h2>
-                        
-                            <h4>B.S, <a href="https://www.dgist.ac.kr/en_college/sub01_02_01.do" target="_blank" rel="noopener noreferrer">School of Undergraduate Studies (SUS)</a>, Computer Engineering</h4>
-                        
-                           
-                        </div>
-                        <div style="margin-bottom: 40px;"></div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.3s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2025.04 - 2025.08</div>
-                            <h2><a href="https://www.osaka-u.ac.jp/en" target="_blank" rel="noopener noreferrer" >  Osaka University</a>
-                            <h4><a href="https://www.osaka-u.ac.jp/en/international/inbound/exchange_program/oussep/oussepguide" target="_blank" rel="noopener noreferrer">Osaka University Short-term Student Exchange Program (OUSSEP)</a></h4>
-                        
-                        </div>
-                        <div style="margin-bottom: 40px;"></div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.5s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2023.06 - 2023.08</div>
-                            <h2><a href="https://www.ucla.edu" target="_blank" rel="noopener noreferrer" >University of California, Los Angeles (UCLA)</a></h2>
-                            <h4><a href="https://summer.ucla.edu" target="_blank" rel="noopener noreferrer" >Summer Sessions</a></h4>
+        <a href="mailto:dearsunshine@dgist.ac.kr" style="display: inline-block; padding: 10px 20px; background-color: #b8eafe; color: white; text-decoration: none; border-radius: 5px;">📧</a>
+        <a href="https://drive.google.com/file/d/165OYbpBLs7TinUFqLHsgiCOIkNhbY2GO/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 10px 20px; background-color: #b8eafe; color: white; text-decoration: none; border-radius: 5px;">
+            Curriculum Vitae
+        </a>
+        
+    </div>
+-->
 
-                          
-                        </div>
-                        <div style="margin-bottom: 40px;"></div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.7s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2019.03 - 2022.02</div>
-                            <h2><a href="http://english.haneul.hs.kr" target="_blank" rel="noopener noreferrer" >Incheon Haneul Academy (IHA)</a></h2>
-                    
-                            
-                        </div>
-                    </div>
-                   
-                   
-                </div>
-            </div>
-        </div>
-        <!-- Education End -->
-        
-        
-         <!-- Experience Start -->
-        <div class="experience" id="experience">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>Work Experience</p>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2024.07 - 2024.08</div>
-                            <h2>Research Intern</h2>
-                            <h4><a href="https://ixlab.cs.sfu.ca"target="_blank" rel="noopener noreferrer">Interactive Experiences Lab (ixLab)</a>, 
-                                <a href="https://www.sfu.ca"target="_blank" rel="noopener noreferrer">Simon Fraser University</a></h4>
+     
 
-                            <p>
-                                • participated in the project of  fidgeting in MR environments, designing and developing applications
-                            </p>
-                        </div>
-                     
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2023.09 - 2024.08</div>
-                            <h2>Research Intern</h2>
-                            <h4><a href="https://diag.kr"target="_blank" rel="noopener noreferrer">Designing Intelligence Augmentation Group</a>, 
-                                <a href="https://www.yonsei.ac.kr/en_sc/index.jsp"target="_blank" rel="noopener noreferrer">Yonsei University</a></h4>
-                    
-                            <p>
+      <article class="resume" data-page="education">
 
-                                
-   <a>• worked as a research assistant, making figures and reviewing literature:</a> <a href="https://doi.org/10.1145/3613904.3642880"target="_blank" rel="noopener noreferrer">Find the Bot!: Gamifying Facial Emotion Recognition for Both Human Training and Machine Learning Data Collection</a>
-                            </p>
-                            <p style="margin-bottom: 10px;"></p>
-                            <p>
-                                • worked on individual research about the journal application with a personal handwriting font generator
-                          
-                            </p>
-                            <p style="margin-bottom: 10px;"></p>
-                            <p>
-                                • participated in a research project, “DepThink,” an XR system that enhances cognitive tasks by using spatial depth in mixed reality
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2023.04 - 2023.08</div>
-                            <h2>Undergraduate Content Creator</h2>
-                            <h4><a href="https://www.ploonet.com/studio"target="_blank" rel="noopener noreferrer">Ploonet Studio</a></h4>
-               
-                            <p>
-                                • created promotional content using the platform of Ploonet Studio, a company based on AI and meta-human technology
-                            </p>
-                        </div>
-                    </div>
-                   
-                </div>
+        <header>
+          <h2 class="h2 article-title">Education</h2>
+        </header>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
             </div>
+
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item active">
+
+              <h4 class="h4 timeline-item-title">Daegu Gyeongbuk Institute of Science and Technology (DGIST), South Korea</h4>
+
+              <span>Feb 2022 - today</span>
+
+              <p class="timeline-text">
+                Bachelor of School of Undergraduate Studies, Computer Engineering  
+              </p>
+
+            </li>
+
+            <li class="timeline-item active ">
+
+              <h4 class="h4 timeline-item-title">Osaka University, Japan</h4>
+
+              <span>Apr 2025 – Aug 2025</span>
+
+              <p class="timeline-text">
+                Particiapted in University Short-term Student Exchange Program (OUSSEP)
+              </p>
+
+            </li>
+
+            <li class="timeline-item active">
+
+              <h4 class="h4 timeline-item-title">University of California, Los Angeles (UCLA), United States</h4>
+
+              <span>Jun 2023 – Aug 2023</span>
+
+              <p class="timeline-text">
+                Participated in the 2023 Summer Session
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+      <article class="resume" data-page="experience">
+
+        <header>
+          <h2 class="h2 article-title">Experience</h2>
+        </header>
+        <ul class="filter-list">
+
+          <li class="filter-item">
+            <button class="active" data-filter-btn>All</button>
+          </li>
+          <li class="filter-item">
+            <button data-filter-btn>Research</button>
+          </li>
+
+          <li class="filter-item">
+            <button data-filter-btn>Extracurricular Activities</button>
+          </li>
+
+
+        </ul>
+       
+        <div class="filter-select-box">
+
+          <button class="filter-select" data-select>
+
+            <div class="select-value" data-selecct-value>Select category</div>
+
+            <div class="select-icon">
+              <ion-icon name="chevron-down"></ion-icon>
+            </div>
+
+          </button>
+
+          <ul class="select-list">
+
+            <li class="select-item">
+              <button data-select-item>All</button>
+            </li>
+
+            <li class="select-item">
+              <button data-select-item>Research</button>
+            </li>
+
+            <li class="select-item">
+              <button data-select-item>Extracurricular Activities</button>
+            </li>
+
+           
+          </ul>
+
         </div>
-        <!-- Job Experience End -->
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+           
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item active" data-filter-item data-category="research">
+
+              <h4 class="h4 timeline-item-title">Undergraduate Research Intern</h4>
+
+              <span>Jul 2024 – Aug 2024</span>
+
+              <p class="timeline-text">
+                📍 Tangent Lab, Simon Fraser University, Canada
+              </p>
+              <p class="timeline-text">
+                ● Participated in the project of fidgeting in MR environments; reviewed references, designed and developed applications with SwiftUI for Apple Vision Pro
+            </p>
+            </li>
+
+            <li class="timeline-item active" data-filter-item data-category="research">
+
+              <h4 class="h4 timeline-item-title">Undergraduate Research Intern</h4>
+
+              <span>Sep 2023 – Aug 2024</span>
+              <p class="timeline-text">
+              📍 Designing Intelligence Augmentation Group, Yonsei University, South Korea
+            </p>              
+              <p class="timeline-text">
+                ●	Worked as a research assistant on research projects, making figures for the papers, reviewing literature, and conducting experiments 
+              </p>    
+              <p class="timeline-text">       
+                ●	Worked on individual research about the journal application with a personal handwriting font generator; reviewed references, conducted formative study, designed the application 
+              </p>  
+              <p class="timeline-text">          
+                ●	Participated in an undergraduate group research project, “DepThink,” an XR system that enhances cognitive tasks by using spatial depth in mixed reality 
+              </p>            
+                
+          
+            </li>
+
+            <li class="timeline-item active" data-filter-item data-category="extracurricular activities">
+
+              <h4 class="h4 timeline-item-title">Undergraduate Content Creator</h4>
+           
+              <span>Sep 2023 – Dec 2023 </span>
+              <p class="timeline-text">
+                📍 K-Girls' Day, South Korea                                                                          
+              </p>    
+
+
+              <p class="timeline-text">
+                ●	Created content to promote positive perceptions of female students entering engineering and effectively promoted K-Girls’ Day events and participating organizations
+              </p>
+             
+
+            </li>
+
+            <li class="timeline-item active" data-filter-item data-category="extracurricular activities">
+
+              <h4 class="h4 timeline-item-title">Undergraduate Content Creator</h4>
+           
+              <span>Sep 2023 – Dec 2023 </span>
+              <p class="timeline-text">
+                📍 Daegu Gyeongbuk Institute of Science and Technology, South Korea        
+              </p>    
+
+
+              <p class="timeline-text">
+                ●	Created promotional content for Daegu Gyeongbuk Institute of Science and Technology
+              </p>
+                <p class="timeline-text">
+                ●	Selected as the Best Participant, who made the best promotional content out of 3 team
+              </p>
+              <p class="timeline-text">
+                ●	Presented and documented various ideas for visual communication to send to the design staff
+              </p>
         
+
+            </li>
+
+            <li class="timeline-item active" data-filter-item data-category="extracurricular activities">
+
+              <h4 class="h4 timeline-item-title">Undergraduate Content Creator</h4>
+           
+              <span>Apr 2023 – Aug 2023</span>
+              <p class="timeline-text">
+                📍 Ploonet Studio, South Korea 
+              </p>    
+              <p class="timeline-text">
+                ●	Created promotional content for Ploonet Studio, an AI and meta-human technology company, including conceptualizing virtual services such as the AI psychological counseling platform 'For.rest.'
+              </p>
+                <p class="timeline-text">
+                ●	Selected as an Outstanding Participant who made outstanding promotional content, 3 out of 10 teams
+              </p>
         
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+      </article>
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Design</button>
+            </li>
+
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Development</button>
+              </li>
+
+             
+            </ul>
+
+          </div>
+
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="design">
+              <a href="#" class="project-link" data-modal="modal-1">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="Typography" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Typography</h3>
+
+                <p class="project-category">Design</p>
+
+              </a>
+
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="design">
+              <a href="#" class="project-link" data-modal="modal-2">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">HealTheHill</h3>
+
+                <p class="project-category">Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="design">
+             <a href="#" class="project-link" data-modal="modal-3">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="AKGI" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="design">
+              <a href="#" class="project-link" data-modal="modal-4">
+ 
+                 <figure class="project-img">
+                   <div class="project-item-icon-box">
+                     <ion-icon name="eye-outline"></ion-icon>
+                   </div>
+ 
+                   <img src="./assets/images/project-4.png" alt="forrest" loading="lazy">
+                 </figure>
+ 
+                 <h3 class="project-title">Fundo</h3>
+ 
+                 <p class="project-category">Design</p>
+ 
+               </a>
+             </li>
+
+             <li class="project-item  active" data-filter-item data-category="design">
+              <a href="#" class="project-link" data-modal="modal-5">
+ 
+                 <figure class="project-img">
+                   <div class="project-item-icon-box">
+                     <ion-icon name="eye-outline"></ion-icon>
+                   </div>
+ 
+                   <img src="./assets/images/project-5.png" alt="AKGI" loading="lazy">
+                 </figure>
+ 
+                 <h3 class="project-title">Fundo</h3>
+ 
+                 <p class="project-category">Design</p>
+ 
+               </a>
+             </li>
   
 
-       <!-- Portfolio Start -->
-<div class="portfolio" id="portfolio">
-    <div class="container">
-        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-            <p>Portfolio</p>
+        
+
+          
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+      <div id="modal-1" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>Project Details</h2>
+          <p>Here you can add some detailed information about the project.</p>
+          <iframe src="https://e.notionhero.io/e1/p/a4b87b2-9470e78878a6088544adb3bdaec109e" width="100%" height="100%" frameborder="0" ></iframe>
+        </div>
+      </div>
+      
+      <div id="modal-2" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>Project 2 Details</h2>
+          <p>Here you can add detailed information about Project 2.</p>
+          <iframe src="https://e.notionhero.io/e1/p/d0fb5c3-d6a2df1caa77dc21c54936ae03be54b" width="100%"  height="100%"frameborder="0"></iframe>
+        </div>
+      </div>
+      
+      <div id="modal-3" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>Project 3 Details</h2>
+          <p>Here you can add detailed information about Project 3.</p>
+          <iframe src="https://e.notionhero.io/e1/p/041091e-3856791acbad01e666cd10e2b06b509" width="100%"  height="100%"frameborder="0"></iframe>
+        </div>
+        </div>
+      
+      <div id="modal-4" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>Project 3 Details</h2>
+          <p>Here you can add detailed information about Project 4.</p>
+          <iframe src="https://e.notionhero.io/e1/p/1525215-9aa932913ea7a0acc8cd0cf6543e57c" width="100%"  height="100%"frameborder="0"></iframe>
+        </div>
         </div>
 
-        <div class="row portfolio-container">
-            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                <div class="portfolio-wrap">
-                    <div class="portfolio-img">
-                        <img src="img/typography.png" alt="Image">
-                    </div>
-                    <div class="portfolio-text">
-                        <h3>Typography</h3>
-                        <a class="btn open-modal" href="#" data-modal="typographyModal">+</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="portfolio-wrap">
-                    <div class="portfolio-img">
-                        <img src="img/heal.png" alt="Image">
-                    </div>
-                    <div class="portfolio-text">
-                        <h3>HealTheHill</h3>
-                        <a class="btn open-modal" href="#" data-modal="healModal">+</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="portfolio-wrap">
-                    <div class="portfolio-img">
-                        <img src="img/AKGI.png" alt="Image">
-                    </div>
-                    <div class="portfolio-text">
-                        <h3>AKGI</h3>
-                        <a class="btn open-modal" href="#" data-modal="akgiModal">+</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="portfolio-wrap">
-                    <div class="portfolio-img">
-                        <img src="img/For.rest.png" alt="Image">
-                    </div>
-                    <div class="portfolio-text">
-                        <h3>For.rest</h3>
-                        <a class="btn open-modal" href="#" data-modal="forrestModal">+</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="portfolio-wrap">
-                    <div class="portfolio-img">
-                        <img src="img/dalgu.png" alt="Image">
-                    </div>
-                    <div class="portfolio-text">
-                        <h3>DGIST Content Creator</h3>
-                        <a class="btn open-modal" href="#" data-modal="dgistModal">+</a>
-                    </div>
-                </div>
-            </div>
+      <div id="modal-5" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <h2>Project 3 Details</h2>
+          <p>Here you can add detailed information about Project 4.</p>
+          <iframe src="https://e.notionhero.io/e1/p/ffd7c60-490b77177c48755225a8080d8ea7919" width="100%" height="100%" frameborder="0"></iframe>
         </div>
-    </div>
-</div>
-<!-- Portfolio End -->
-
-<!-- Modal Structure -->
-<div id="typographyModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <iframe src="https://e.notionhero.io/e1/p/a4b87b2-9470e78878a6088544adb3bdaec109e" width="100%" height="100%" frameborder="0" ></iframe>
-    </div>
-</div>
-
-<div id="healModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <iframe src="https://e.notionhero.io/e1/p/d0fb5c3-d6a2df1caa77dc21c54936ae03be54b" width="100%"  height="100%"frameborder="0"></iframe>
-    </div>
-</div>
-<div id="akgiModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <iframe src="https://e.notionhero.io/e1/p/041091e-3856791acbad01e666cd10e2b06b509" width="100%"  height="100%"frameborder="0"></iframe>
-    </div>
-</div>
-
-
-<div id="forrestModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <iframe src="https://e.notionhero.io/e1/p/1525215-9aa932913ea7a0acc8cd0cf6543e57c" width="100%"  height="100%"frameborder="0"></iframe>
     
+      </div>
+
+
+    
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+   
+
+
+      </article>
+
     </div>
-</div>
 
-<div id="dgistModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <iframe src="https://e.notionhero.io/e1/p/ffd7c60-490b77177c48755225a8080d8ea7919" width="100%" height="100%" frameborder="0"></iframe>
-    </div>
-</div>
-
-<script>
-// Modal management
-document.addEventListener("DOMContentLoaded", function() {
-    var modals = document.querySelectorAll('.modal');
-    var openButtons = document.querySelectorAll('.open-modal');
-    var closeButtons = document.querySelectorAll('.close-button');
-
-    // Open modal
-    openButtons.forEach(function(button) {
-        button.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default link behavior
-            var modalId = button.getAttribute('data-modal');
-            document.getElementById(modalId).style.display = 'block';
-        });
-    });
-
-    // Close modal
-    closeButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            button.closest('.modal').style.display = 'none';
-        });
-    });
-
-    // Close modal if clicked outside
-    window.addEventListener('click', function(event) {
-        if (event.target.classList.contains('modal')) {
-            event.target.style.display = 'none';
-        }
-    });
-});
-</script>
+  </main>
 
 
 
 
-        <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Suyeon Shin</h2>
-                 
-                        <div class="footer-menu">
 
-                            <p>dearsunshine@dgist.ac.kr</p>
-                        
-                    </div>
-                </div>
-                <div class="container copyright">
-					<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                   <p> Last Update on Dec 2024</p>
-                   <p> Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-        
-        
-        <!-- Back to top button -->
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
-        </div>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
