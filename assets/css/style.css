@@ -1802,10 +1802,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   z-index: 10; /* Increase the z-index to be above the navbar */
   overflow: auto;
   border-radius: 15px; /* 모서리 둥글게 */
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   /* 중앙 배치를 위한 스타일 */
-  position: absolute;
+  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1815,7 +1815,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* 모달 내용 */
 /* 기본 모달 스타일 */
 .modal-content {
-
+position: absolute;
   background-color: #FFFFFF
   ;
   border-radius: 10px;
@@ -1831,6 +1831,8 @@ overflow: hidden;
  
  
 }
+
+
 
 
 /* 닫기 버튼 */
