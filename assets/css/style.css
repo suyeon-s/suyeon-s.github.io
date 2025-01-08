@@ -507,8 +507,24 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
   
-
 }
+
+
+.about-text #hobbies{
+  display: flex;
+  color: #1e1e1f;
+  z-index: 10;
+  position: relative; /* z-index가 적용되도록 설정 */
+}
+
+.about-text #hobbies p:hover {
+  color:var(--light-gray);
+  cursor: url(../images/flash.png) 30 50, auto;
+
+
+  
+}
+
 
 
 
@@ -798,6 +814,28 @@ main {
   line-height: 1.3;
   margin-bottom: 7px;
 }
+.timeline-item-title a{
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  margin-bottom: 7px;
+  color:
+#fafafa;
+font-family:
+Poppins;
+font-size:
+15px;
+font-weight:
+700;
+line-height:
+19.5px;
+margin:
+0px 0px 7px;
+text-align:
+left;
+text-transform:
+capitalize;
+}
+
 
 .timeline-list span {
   color: var(--vegas-gold);
@@ -828,6 +866,12 @@ main {
 }
 
 .timeline-text {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+.timeline-text a {
+  display: inline;
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -1932,3 +1976,99 @@ button {
 }
 
 
+  
+
+    /* 토글 버튼 스타일 */
+    .toggle-button {
+      
+        color: white;
+        border: none;
+
+       
+        cursor: pointer;
+     
+    }
+
+  
+
+    /* 취미 목록 스타일 */
+    #hobbies {
+         display: flex;
+        margin-top: 20px;
+
+        list-style-type: none;
+
+        margin-bottom: 10px;
+        color: #555;
+    }
+    #hobbies div {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #333;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: inline-block; /* 콘텐츠에 맞게 크기 조정 */
+        white-space: nowrap; /* 텍스트가 줄 바꿈 되지 않도록 설정 */
+      
+  }
+
+  
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color:var(--orange-yellow-crayola);
+    color: #1e1e1f;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the text */
+    left: 50%;
+    margin-left: -100px; /* Offset to center the tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+}
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* Position the triangle below the tooltip */
+  left: 50%;
+  margin-left: -10px; /* Center the triangle */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--orange-yellow-crayola); /* Match the tooltip background */
+
+}
+
+/* Show the tooltip when hovering */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover {
+  font-weight: bold; }
+
+
+.tooltip:hover {
+  font-weight: bold; }
+
+  .link:hover {
+    font-weight: bold; }
+  
