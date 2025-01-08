@@ -498,6 +498,7 @@ main {
   #ABOUT
 \*-----------------------------------*/
 
+
 .about .article-title { margin-bottom: 15px;  }
 
 .about-text {
@@ -505,10 +506,9 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  
 
 }
-
-.about-text p { margin-bottom: 15px; }
 
 
 
@@ -1850,7 +1850,7 @@ overflow: hidden;
 /* 닫기 버튼 호버 효과 */
 .close-btn:hover,
 .close-btn:focus {
-  color: #333;
+  color: #f4c542;
 }
 
 /* 모달 바깥부분 어두운 배경 처리 */
@@ -1929,47 +1929,6 @@ button {
 .filter-btn.active {
   color: #f4c542; /* Orange-yellow crayola for active state */
   background-color: transparent; /* Keeps the background clean */
-}
-
-
-#video-box {
-  position: relative;
-  align-content: center;
-  width: 100%;
-  max-width: 600px; /* 필요에 따라 크기 조정 */
-  height: 400px; /* 고정 높이 설정 */
-  overflow-y: auto; /* 세로 스크롤 활성화 */
-  border: 2px solid #b8eafe;
-  border-radius: 10px;
-}
-
-/* 비디오 스타일링 */
-#video {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* 비디오 설명 스타일 */
-#fixed-description {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
-  font-size: 24px;
-}
-
-/* 비디오 설명이 너무 길어지지 않도록 조정 */
-#fixed-description-before {
-  margin-bottom: 10px;
-}
-
-
-#video-section {
-  width: 400px;
-  height: 500px;
-  margin-left:200px;
-  margin-top: 50px; /* 비디오 섹션과 위 다른 섹션과의 간격 */
 }
 
 
