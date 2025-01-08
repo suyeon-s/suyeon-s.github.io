@@ -228,3 +228,32 @@ function showExtracurricular() {
   });
 
   
+
+
+
+  // 모든 버튼과 프로젝트 아이템 가져오기
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectItems = document.querySelectorAll('.project-item');
+
+// 버튼 클릭 이벤트 추가
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.dataset.category;
+
+    // 버튼 스타일 업데이트
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    // 프로젝트 아이템 필터링
+    projectItems.forEach(item => {
+      const itemCategory = item.dataset.category;
+
+      // 'all'일 경우 모두 보이기
+      if (category === 'all' || itemCategory === category) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
