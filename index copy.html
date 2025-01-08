@@ -42,7 +42,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./myavatar.png" alt="SuyeonShin" width="80">
+          <img src="myavatar.png" alt="SuyeonShin" width="80">
         </figure>
         <div class="info-content">
           <h1 class="name" title="Suyeon Shin">Suyeon Shin</h1>
@@ -96,8 +96,24 @@
 
           </li>
 
-        </ul>
+                
+          <li class="contact-item">
 
+            <div class="icon-box">
+              <ion-icon name="document-text-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">
+                <a href="https://drive.google.com/file/d/165OYbpBLs7TinUFqLHsgiCOIkNhbY2GO/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="color: #d6d6d6b3; font-family: Poppins; font-size: 12px; margin: 0px 0px 2px; text-align: left; text-transform: uppercase;">Curriculum Viate</a>
+              </p>
+              
+            </div>
+
+          </li>
+
+        </ul>
+       
         
 
     
@@ -153,7 +169,7 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about  active" data-page="about" style="align-items: center; justify-content: center;" >
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -165,21 +181,31 @@
             I'm studying Computer Engineering at Daegu Gyeongbuk Institute of Science and Technology (DGIST). I'm interested in HCI, especially UI/UX, psychology, and mental health. I want to enhance people's experiences 
             and the emotional state they feel within those experiences. 
           </p>
-          <p>
-            <a href="https://drive.google.com/file/d/165OYbpBLs7TinUFqLHsgiCOIkNhbY2GO/view?usp=drive_link" target="_blank" rel="noopener noreferrer" style="color:#ffffff; display: inline;">Here</a>
-            <a style="color: #D6D6D6; display: inline;">is my Curriculum Vitae.</a>
-          </p>
-          
+         
+
+
         </section>
-        
+       
+                   
+        <section id="video-section">
+          <div id="fixed-wrapper">
+            <div>I want to make</div>
+              <div>듀듀듀</div>
+            <video id="video" src="baymax.MP4" type="video/mp4" muted loop></video>
+            <div id="fixed-description">
+              <div>Peel the avocado</div>
+              <div>듀듀듀</div>
+            </div>
+          </div>
+        </section>
 
-
+      
       
 
 
       
         <!--
-          - testimonials modal
+          - do not erase
         -->
 
         <div class="modal-container" data-modal-container>
@@ -192,45 +218,15 @@
               <ion-icon name="close-outline"></ion-icon>
             </button>
 
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
           </section>
 
         </div>
 
 
-        <!--
-          - clients
-        -->
-
- 
+      
        
 
-        </section>
+       
 
       </article>
 <!--
@@ -329,9 +325,8 @@
 
           <button class="filter-select" data-select>
             
-            <div class="select-value" data-selecct-value>Select category</div>
+            <div class="select-value" data-selecct-value>All</div>
            
-
             <div class="select-icon">
               <ion-icon name="chevron-down"></ion-icon>
             </div>
@@ -481,56 +476,12 @@
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
      
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Development</button>
-            </li>
-
-            
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Development</button>
-              </li>
-
-             
-
-            </ul>
-
-          </div>
-
+        <div class="category-filter">
+       
+          <button class="filter-btn active" data-category="design">Design</button>
+          <button class="filter-btn" data-category="development">Development</button>
+        
+        </div>
     
           <ul class="project-list">
 
@@ -545,7 +496,7 @@
 
                 <h3 class="project-title">Typography</h3>
 
-                <p class="project-category">Design</p>
+                <p class="project-category">Grphic Design</p>
 
               </a>
 
@@ -564,7 +515,7 @@
 
                 <h3 class="project-title">HealTheHill</h3>
 
-                <p class="project-category">Design</p>
+                <p class="project-category">Universal Design</p>
 
               </a>
             </li>
@@ -582,7 +533,7 @@
 
                 <h3 class="project-title">AKGI</h3>
 
-                <p class="project-category">Design</p>
+                <p class="project-category">Product Design</p>
 
               </a>
             </li>
@@ -600,7 +551,7 @@
  
                  <h3 class="project-title">For.rest</h3>
  
-                 <p class="project-category">Design</p>
+                 <p class="project-category">UI Design / Marketing Design</p>
  
                </a>
              </li>
@@ -618,7 +569,7 @@
  
                  <h3 class="project-title">DGIST Content Creator</h3>
  
-                 <p class="project-category">Design</p>
+                 <p class="project-category">Marketing Design</p>
  
                </a>
               </li>

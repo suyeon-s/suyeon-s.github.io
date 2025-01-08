@@ -228,32 +228,108 @@ function showExtracurricular() {
   });
 
   
-
-
-
-  // 모든 버튼과 프로젝트 아이템 가져오기
 const filterButtons = document.querySelectorAll('.filter-btn');
-const projectItems = document.querySelectorAll('.project-item');
-
-// 버튼 클릭 이벤트 추가
-filterButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const category = button.dataset.category;
-
-    // 버튼 스타일 업데이트
-    filterButtons.forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-
-    // 프로젝트 아이템 필터링
-    projectItems.forEach(item => {
-      const itemCategory = item.dataset.category;
-
-      // 'all'일 경우 모두 보이기
-      if (category === 'all' || itemCategory === category) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
+  const projectItems = document.querySelectorAll('.project-item');
+  
+  // 버튼 클릭 이벤트 추가
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.dataset.category;
+  
+      // 버튼 스타일 업데이트
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+  
+      // 프로젝트 아이템 필터링
+      projectItems.forEach(item => {
+        const itemCategory = item.dataset.category;
+  
+        // 'all'일 경우 모두 보이기
+        if (category === 'all' || itemCategory === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
     });
   });
-});
+
+
+  
+
+
+  const listStyleChangeStartY = 373
+  const listStyleChangeEndY = 1585
+
+  const listItems = document.querySelectorAll('.list-item')
+
+  const division = (listStyleChangeEndY - listStyleChangeStartY) / listItems.length
+
+  const videoPlayBack = 500
+
+  const videoElement = document.getElementById('video')
+  const videoSection = document.getElementById("video-section")
+
+  const fixedWrapper = document.getElementById("fixed-wrapper")
+
+  const fixedDescription = document.getElementById("fixed-description")
+
+  function centerElement(elementId, video) {
+    const element = document.getElementById(elementId);
+    const parent = element.parentElement;
+    
+
+    if (window.scrollY > parent.offsetTop - ((document.documentElement.clientHeight - element.offsetHeight) / 2)) {
+      element.style.position = "fixed";
+      element.style.top = "50%"
+      element.style.left = "50%"
+      element.style.transform = "translate(-50%, -50%)"
+
+      if (video) video.currentTime = (window.scrollY - videoSection.offsetTop) / videoPlayBack
+    } else {
+      element.style.position = "relative"
+      element.style.top = "initial"
+      element.style.left = "initial"
+      element.style.transform = "initial"
+    }
+  }
+  
+
+  
+  videoElement.addEventListener("loadedmetadata", () => {
+    document.getElementById("video-section").style.height = videoElement.duration * videoPlayBack + "px";
+  })
+
+  const fixedDescriptionAppearTiming = 3470
+  const fixedDescriptionAppearEnds = 3800
+
+  window.addEventListener("scroll", () => {
+    if (document.getElementById("on")) document.getElementById("on").removeAttribute("id")
+
+    centerElement("fixed-wrapper", videoElement)
+
+    if (window.scrollY > videoSection.offsetTop + videoSection.offsetHeight - (fixedWrapper.offsetHeight + (document.documentElement.clientHeight - fixedWrapper.offsetHeight) / 2)) {
+      fixedWrapper.style.position = "relative"
+      fixedWrapper.style.top = "initial"
+      fixedWrapper.style.left = "initial"
+      fixedWrapper.style.transform = `translateY(${videoSection.offsetHeight - fixedWrapper.offsetHeight}px)`
+    }
+
+    if (window.scrollY > fixedDescriptionAppearTiming && window.scrollY < fixedDescriptionAppearEnds) {
+      fixedDescription.style.transform = `translateY(${fixedDescriptionAppearEnds - window.scrollY}px)`
+      fixedDescription.style.opacity = (window.scrollY - fixedDescriptionAppearTiming) / 300
+    } else if (window.scrollY > fixedDescriptionAppearEnds) {
+      fixedDescription.style.transform = `translateY(0px)`
+      fixedDescription.style.opacity = 1
+    } else {
+      fixedDescription.style.transform = `translateY(100px)`
+      fixedDescription.style.opacity = 0
+    }
+  })
+
+
+  videoElement.addEventListener("ended", function() {
+    console.log("Video has ended");
+    window.scrollTo(0, 0); // 비디오가 끝나면 페이지를 맨 위로 스크롤
+  });
+  
