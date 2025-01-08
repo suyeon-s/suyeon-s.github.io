@@ -1899,21 +1899,26 @@ button {
 }
 .category-filter {
   display: flex;
+  justify-content: flex-start;
   text-align: center;
-  margin-bottom: 20px;
+  gap: 25px;
+
+  padding-left: 5px;
+  margin-bottom: 30px;
 }
 
 .filter-btn {
 
-  color: #d3d3d3; /* Light gray */
-  font-size: 16px; /* Replace with a specific size if needed */
+  color: var(--light-gray);
+  font-size: var(--fs-5);
+  transition: var(--transition-1);
+  
   padding: 10px 20px;
   margin: 0 5px;
-  border: 1px solid var(--jet);
-  border-radius: 14px;
+ 
   background-color: transparent; /* Transparent background for consistency */
   cursor: pointer;
-  transition: all 0.3s ease; /* Smooth transition effect */
+
 }
 
 .filter-btn:hover {
