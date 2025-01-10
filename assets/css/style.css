@@ -2071,4 +2071,12 @@ button {
 
   .link:hover {
     font-weight: bold; }
+  .sns{
+    display: flex;
+
+  }
+  .sns a{
+
+      color:var(--light-gray-70) ;
+    }
   
