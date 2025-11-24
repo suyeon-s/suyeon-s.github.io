@@ -74,7 +74,7 @@
    */
 
   /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
+  --ff-default: 'Poppins','Noto Sans Kr', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -153,12 +153,15 @@ input, textarea {
 
 :focus { outline-color: var(--orange-yellow-crayola); }
 
-html { font-family: var(--ff-poppins); }
+html { font-family: var(--ff-default); }
 
 body { background: var(--smoky-black); }
 
 
 
+body.lang-ko {
+  font-family: var(--ff-korean);
+}
 
 
 /*-----------------------------------*\
@@ -525,6 +528,9 @@ main {
   
 }
 
+#link:hover {
+  font-weight: bold; 
+}
 
 
 
@@ -852,6 +858,7 @@ capitalize;
   height: calc(100% + 50px);
   background: var(--jet);
 }
+
 
 .timeline-item::after {
   content: "";
@@ -1268,6 +1275,66 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 12px;
     font-size: 18px;
   }
+  .language-container { /* 클래스 이름을 language-container로 사용 */
+    display: flex;               /* flex 사용 */
+    flex-direction: row;         /* 👈 버튼을 가로로 배치 */
+    justify-content: flex-end;   /* 버튼을 오른쪽 끝에 정렬 */
+    align-items: center;         /* 세로축 중앙 정렬 */
+    gap: 10px;                   /* 버튼 간 간격 */
+    position: absolute;             /* 스크롤에 관계없이 고정 */
+    top: 10px;                   /* 화면 위쪽 여백 (조절 가능) */
+    right: 20px;                 /* 화면 오른쪽 여백 (추가) */
+    left: auto;                  /* 중앙 정렬 속성 제거 */
+    transform: none;             /* 중앙 정렬 속성 제거 */
+                   /* navbar보다 위에 표시 */
+  }
+  
+  /* 버튼 스타일은 그대로 유지합니다. (language-buttons 클래스 대신 사용) */
+  .language-container button {
+    position: relative; 
+    padding: 10px 20px;
+    background: var(--border-gradient-onyx); 
+    color: var(--light-gray);
+    border: 1px solid var(--jet); 
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: var(--fs-6);
+    box-shadow: var(--shadow-3); 
+    transition: var(--transition-1);
+    z-index: 1;
+  }
+  
+  /* 버튼 ::before, :hover, .active 스타일도 클래스 이름에 맞춰 수정하세요. */
+
+  .language-container button::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+    transition: var(--transition-1);
+  }
+  
+  .language-container button:hover,
+  .language-container button:focus {
+    background: var(--bg-gradient-yellow-1); 
+    color: var(--light-gray);
+  }
+
+  .language-container button:hover::before,
+  .language-container button:focus::before {
+    background: var(--bg-gradient-yellow-2);
+  }
+
+  .language-container button.active {
+    background: var(--bg-gradient-yellow-1);
+    color: var(--light-gray);
+  }
+  
+  .language-container button.active::before {
+    background: var(--bg-gradient-yellow-2);
+  }
 
 
 
@@ -1276,7 +1343,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   main {
-    margin-top: 60px;
+    margin-top: 75px;
     margin-bottom: 100px;
   }
 
@@ -2079,4 +2146,10 @@ button {
 
       color:var(--light-gray-70) ;
     }
-  
+    .language-buttons {
+      display: flex;         /* 가로가 아닌 세로로 쌓으려면 flex-direction 사용 */
+      flex-direction: column; 
+      align-items: center;   /* 가운데 정렬 */
+      gap: 8px;              /* 버튼 사이 간격 */
+      margin-bottom: 10px;   /* 아래쪽 여백 */
+    }
